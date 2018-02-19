@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DemoApplication</string>
+    <string name="connection_Issues">No Data Connection Available</string>
+    <string name="key_layout_manager">KEY_FOR_LAYOUT_MANAGER</string>
+    <string name="exception_download">Exception Download Data</string>
+    <string name="text_title">Text Title</string>
+    <string name="text_desc">Text Title description goes here</string>
+    <string name="empty_data">No Items to display</string>
 </resources>

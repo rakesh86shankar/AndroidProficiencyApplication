@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 public interface APIInterface {
 
     @GET("s/2iodh4vg0eortkl/facts.json")
-    Call<NewsList>  getNewsList();
+    Call<NewsList> getNewsList();
 
 
 }

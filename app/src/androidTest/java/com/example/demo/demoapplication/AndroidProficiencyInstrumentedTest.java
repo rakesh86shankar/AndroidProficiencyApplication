@@ -31,7 +31,7 @@ public class AndroidProficiencyInstrumentedTest {
     }
 
     @Test
-    public void newsData_1() throws Exception{
+    public void newsData_1() throws Exception {
         NewsList newsListData = new NewsList();
         Row row1 = new Row();
         row1.setTitle("TestTitle");
@@ -45,11 +45,11 @@ public class AndroidProficiencyInstrumentedTest {
         rows.add(row2);
         newsListData.setRows(rows);
         NewsUtil.getNonNullData(newsListData);
-        assertEquals(1,newsListData.getRows().size());
+        assertEquals(1, newsListData.getRows().size());
     }
 
     @Test
-    public void newsData_Success() throws Exception{
+    public void newsData_Success() throws Exception {
         NewsList newsListData = new NewsList();
         Row row1 = new Row();
         row1.setTitle("TestTitle1");
@@ -63,7 +63,7 @@ public class AndroidProficiencyInstrumentedTest {
         row2.setImageHref("http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg");
         newsListData.setRows(rows);
         NewsUtil.getNonNullData(newsListData);
-        assertEquals(2,newsListData.getRows().size());
+        assertEquals(2, newsListData.getRows().size());
     }
 
 

@@ -7,17 +7,13 @@ import com.example.demo.demoapplication.modal.Row;
 
 import java.util.Iterator;
 
-/**
- * Created by RA283478 on 2/15/2018.
- */
 
 public class NewsUtil {
 
 
     /**
      * method to check and remove null data item from list of row data items.
-     * @param newsListData
-     * @return
+     *
      */
     public static NewsList getNonNullData(NewsList newsListData) {
 
@@ -34,7 +30,7 @@ public class NewsUtil {
         return newsListData;
     }
 
-    public static boolean isNull(String value) {
+    private static boolean isNull(String value) {
         return TextUtils.isEmpty(value);
     }
 }

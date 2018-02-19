@@ -1,9 +1,5 @@
 package com.example.demo.demoapplication.network;
 
-/**
- * Created by rakesh sankar on 9/12/2017.
- */
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -13,8 +9,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
-    public static final String ROOT_URL  = "https://dl.dropboxusercontent.com/";
-    private static Retrofit retrofit = null;
+    private static final String ROOT_URL = "https://dl.dropboxusercontent.com/";
 
     public static Retrofit getClient() {
 
@@ -27,12 +22,11 @@ public class APIClient {
                 .setLenient()
                 .create();
 
-        retrofit = new Retrofit.Builder()
+        return new Retrofit.Builder()
                 .baseUrl(ROOT_URL)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();
-        return retrofit;
     }
 
 }

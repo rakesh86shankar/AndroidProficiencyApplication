@@ -1,12 +1,7 @@
 package com.example.demo.demoapplication;
 
-import com.example.demo.demoapplication.modal.NewsList;
-import com.example.demo.demoapplication.modal.Row;
-
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -20,8 +15,6 @@ public class ExampleUnitTest {
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
     }
-
-
 
 
 }
